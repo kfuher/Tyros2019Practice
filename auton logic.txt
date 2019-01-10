@@ -1,0 +1,35 @@
+AUTOMATION LOGIC
+	
+	y) use prox sensor to always detect if a robot is within a few feet
+	z) manual override
+
+	ROCKET AUTON
+
+		a) drive straight off the side of the level 1 platform
+		b) strafe diagonally to the ball deposit (middle) of the rocket
+		c) switch to ROCKET LOOP
+
+	ROCKET LOOP [DOES NOT INCLUDE PICKING UP BALL IN FIELD
+
+		g) use color sensors to follow white line
+		h) prox sensor to stop right in front of rocket
+		i) drop ball in a spot
+		j) back up, following white line along line
+		k) keep following until white line is no longer visible
+		l) rotate 90 deg toward the alliance station
+		m) drive forward and use prox sensor to stop before wall
+		n) use human player to load hatch
+		o) rotate 180 deg
+		p) drive and strafe slightly and align with hatch line (alternate sides)
+		q) align and deploy
+		r) back up and turn to face the alliance station
+		s) drive to wall
+		d) use human player to load ball
+		e) rotate 180 degrees
+		f) drive straight (potentially a little strafing is necessary to get to the white tape for loading the ball)
+
+	CARGO AUTON
+
+		a) drive straight off side of level 1 platform
+
+	CARGO LOOP
