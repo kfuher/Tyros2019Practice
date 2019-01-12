@@ -3,33 +3,53 @@ AUTOMATION LOGIC
 	y) use prox sensor to always detect if a robot is within a few feet
 	z) manual override
 
-	ROCKET AUTON
+	ROCKET AUTON [1 BALL AND THEN 1 HATCH: 50/50 CHANCE THEY ARE THE SAME SIDE]
 
+		START WITH BALL LOADED
 		a) drive straight off the side of the level 1 platform
 		b) strafe diagonally to the ball deposit (middle) of the rocket
 		c) switch to ROCKET LOOP
 
-	ROCKET LOOP [DOES NOT INCLUDE PICKING UP BALL IN FIELD
+	ROCKET LOOP [START AT WHITE LINE]
 
-		g) use color sensors to follow white line
-		h) prox sensor to stop right in front of rocket
-		i) drop ball in a spot
-		j) back up, following white line along line
-		k) keep following until white line is no longer visible
-		l) rotate 90 deg toward the alliance station
-		m) drive forward and use prox sensor to stop before wall
-		n) use human player to load hatch
-		o) rotate 180 deg
-		p) drive and strafe slightly and align with hatch line (alternate sides)
-		q) align and deploy
-		r) back up and turn to face the alliance station
-		s) drive to wall
-		d) use human player to load ball
-		e) rotate 180 degrees
-		f) drive straight (potentially a little strafing is necessary to get to the white tape for loading the ball)
+		d) use color sensors to follow white line
+		e) prox sensor to stop right in front of rocket
+		f) drop BALL in a spot
+		g) back up, following white line along line
+		h) keep following until white line is no longer visible
+		i) rotate 90 deg toward the alliance station
+		j) drive forward and use prox sensor to stop before wall (have the robot remember how much distance this was)
+		k) use human player to load HATCH
+		l) rotate 180 deg
+		m) drive the same distance and strafe slightly and align with hatch line (alternate sides)
+		n) align and deploy HATCH
+		o) back up, following white line along line
+		p) keep following until white line is no longer visible
+		q) rotate ~60 deg toward the alliance station
+		r) drive forward and use prox sensor to stop before wall (have the robot remember how much distance this was)
+		s) use human player to load BALL
+		t) rotate 180 deg
+		u) drive the same distance and strafe slightly and align with ball line (middle)
 
-	CARGO AUTON
+	CARGO AUTON [1 BALL AND 1 HATCH IN EITHER ORDER, FOR THE SAME SPOT]
 
+		START WITH BALL/HATCH LOADED
 		a) drive straight off side of level 1 platform
+		b) switch to CARGO LOOP
 
-	CARGO LOOP
+	CARGO LOOP [START AT WHITE LINE]
+		
+		c) use color sensors to follow white line
+		d) prox sensor to stop right in front of cargo ship
+		e) drop BALL/HATCH in a spot
+		f) back up, following white line along line
+		g) rotate 180 deg
+		h) strafe to the side
+		i) drive forward and use prox sensor to stop before wall (have the robot remember how much distance this was)
+		j) use human player to load HATCH/BALL
+		k) rotate 180 deg
+		l) drive the same distance back
+		m) strafe the opposite velocity
+		n) use color sensors to follow white line
+		o) prox sensor to stop right in front of cargo ship
+		p) drop HATCH/BALL in a spot
