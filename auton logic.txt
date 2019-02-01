@@ -119,7 +119,7 @@ CARGO AUTON
 		3) prox sensor to stop
 		4) place HATCH
 		5) back up along white line then back up for about 2 more seconds (to be just in front of the HAB line)
-CARGO AUTON
+CARGO/ROCKET AUTON
 
 		START HATCH LOADED [START AT EDGE OF PLATFORM] <HORIZONTAL VALUES ARE REVERSED FOR THE OTHER SIDE OF THE CARGO SHIP>
 		(SIDE 1 HATCH, ROCKET 1 HATCH)
